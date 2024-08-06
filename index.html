@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zona Norte RP</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        .nav-pills .nav-link {
+            background-color: #212529;
+            color: white;
+            margin-bottom: 5px;
+        }
+
+        .nav-pills .nav-link.active {
+            background-color: #343a40;
+        }
+
+        .tabs-content-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .content-box {
+            background-color: #343a40;
+            color: white;
+            padding: 20px;
+            border-radius: 12px;
+            width: 100%;
+            max-width: 1600px;
+        }
+
+        .me {
+            color: rgb(251, 72, 72);
+        }
+
+        .do {
+            color: rgb(81, 81, 255);
+        }
+
+        @media (max-width: 576px) {
+            .tabs-content-container {
+                flex-direction: column;
+            }
+
+            .nav {
+                flex-direction: row;
+                justify-content: center;
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-dark">
+
+    <header>
+        <h2 class="text-center text-white mt-4"><img src="zn.png" alt=""></h2>
+    </header>
+
+    <div class="tabs-content-container">
+        <div class="content-box d-flex align-items-start">
+            <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill"
+                    data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home"
+                    aria-selected="true">Normativa General</button>
+                <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill"
+                    data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile"
+                    aria-selected="false">Normativa PFA</button>
+                <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill"
+                    data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages"
+                    aria-selected="false">Normativa SAME</button>
+                <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill"
+                    data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings"
+                    aria-selected="false">Normativa A.C.A</button>
+            </div>
+            <div class="tab-content" id="v-pills-tabContent">
+                <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
+                    aria-labelledby="v-pills-home-tab">
+                    <h4 class="text-center text-white">Normativa General</h4>
+                    <h6>Índice</h6>
+                    <p>
+                        1.0 - IN CHARACTER (IC)<br>
+                        1.1 - OUT OF CHARACTER (OOC)<br>
+                        1.2 - META GAMING (MG)<br>
+                        1.3 - POWER GAMING (PG)<br>
+                        1.4 - PLAYER KILL (PK)<br>
+                        1.5 - CHARACTER KILL (CK)<br>
+                        1.6 - ROL DE ENTORNO (RDE)<br>
+                        1.7 - TIPOS DE ZONAS<br>
+                        1.8 - DEATH MATCH (DM)<br>
+                        1.9 - VEHICLE DEATHMATH (VDM)<br>
+                        1.10 - REVENGE KILL (RK)<br>
+                        1.11 - BUNNY JUMP (BJ)<br>
+                        1.12 - BUG ABUSE (BA)<br>
+                        1.13 - EVADIR ROL (ER)<br>
+                        1.14 - NO ROL DE ENTORNO (NRE)<br>
+                        1.15 - INSULTOS FUERA DEL JUGADOR(IOOC)<br>
+                        1.16 - VALORAR VIDA<br>
+                        1.17 - ROLES AGRESIVOS EN VEHÍCULOS<br>
+                        1.18 - ROL DE HUMILLACIÓN<br>
+                        1.19 - SOBRE EL USO DE CHEATS<br>
+                        1.20 - COMANDOS Y SUS USOS<br>
+                        <hr>
+                        <strong>1.0 IN CHARACTER (IC): </strong>
+                        Se refiere a todo lo que tu personaje puede realizar dentro del juego, por ejemplo: ver, oír,
+                        tocar, oler, saborear, sentir, etc. Todo lo que tu personaje puede hacer, decir, o pensar y todo
+                        lo que tu personaje puede experimentar.
+                        <br><br>
+                        <strong>1.1 OUT OF CHARACTER (OOC): </strong>Se refiere a todo aquello que se relaciona con el
+                        juego ó personaje que ocurre fuera del juego.
+                        <br><br>
+                        <strong>1.2 META GAMING (MG): </strong>Es la acción de utilizar información obtenida fuera del
+                        rol de tu personaje (OOC), para beneficio propio dentro del rol de tu personaje (IC).
+                        <br><br>
+                        <strong>1.3 POWER GAMING (PG): </strong>Es la acción de forzar situaciones, acciones, o roles,
+                        que no tienen sentido, o que no son posibles en la vida real, para beneficio propio.
+                        <br><br>
+                        <strong>1.4 PLAYER KILL (PK): </strong>Es la muerte del jugador y existen dos tipos:
+                    <ul>
+                        <li>Player Kill Total (PKT): Es la pérdida de memoria de una gran parte de tu vida. Por ejemplo:
+                            Una mafia que te pega un culatazo en la cabeza para olvidar toda la información de la misma.
+                        </li>
+                        <li>Player Kill Parcial (PKP): Es la pérdida de memoria de una situación concreta que no afecta
+                            al personaje. Se aplica cuando la muerte fue poco importante. Por ejemplo: estan robando una
+                            tienda y ves el rostro de los delincuentes y ellos te matan para que te olvides lo sucedido.
+                        </li>
+                    </ul>
+                    <br>
+                    <strong>1.5 CHARACTER KILL (CK): </strong>Es la eliminación de un personaje, de todas sus
+                    pertenencias, conocimientos, amistades, es la muerte del personaje dentro del juego (para el uso de
+                    este se requiere previa aprobación de un administrador).
+                    <br><br>
+                    <strong>1.6 ROL DE ENTORNO (RDE): </strong>Se entiende por rol de entorno que se debe respetar la
+                    manera apropiada de actuar en cada uno de los lugares, ya que, la comisaría está llena de policías,
+                    el hospital está lleno de médicos, una base mafia está llena de mafiosos, por la acera pasan
+                    peatones y por la calle van autos en diferentes sentidos, etc. Está prohibido no respetar el rol de
+                    entorno.
+                    <br><br>
+                    <strong>1.7 TIPOS DE ZONAS: </strong>
+                    <ul>
+                        <li>ZONA SEGURA: Se entiende por zona segura a un ambiente donde no está permitido iniciar roles
+                            agresivos o actividades ilícitas. Se encuentran delimitadas en el mapa con color azul.</li>
+                        <li>ZONA NEUTRAL: Son zonas residuales, es decir, no son ni zonas rojas ni zonas seguras.</li>
+                        <li>ZONA AMARILLA: Es una zona de robo para civiles, es la única zona en donde los civiles
+                            tienen permitido usar como
+                            armamento una SMG.</li>
+                        <li>ZONA ROJA: Es una zona en la que se puede rolear de manera agresiva y realizar actos
+                            delictivos.</li>
+                    </ul>
+                    <br><br>
+                    <strong>1.8 DEATH MATCH (DM): </strong>Es la acción de agredir o matar a otro personaje, sin un rol
+                    previo, y sin una razón válida.
+                    <br><br>
+                    <strong>1.9 VEHICLE DEATHMATH (VDM): </strong>Es la acción de matar o agredir a otro personaje,
+                    utilizando un vehículo, sin un rol previo, y sin una razón válida.
+                    <br><br>
+                    <strong>1.10 REVENGE KILL (RK): </strong>Es la acción de matar a otro personaje, después de haber
+                    sido asesinado por él, sin un rol previo, y sin una razón válida. Es importante tener en cuenta que
+                    no podrá recordar nada de lo que ocurrió anteriormente ni volver al lugar en los próximos 15
+                    minutos. De caso contrario no estaría respetando el (PKP)
+                    <br><br>
+                    <strong>1.11 BUNNY JUMP (BJ): </strong>Hace referecia a correr y saltar repetidamente para ir a
+                    mayor velocidad, esta completamente prohibido y es sancionable.
+                    <br><br>
+                    <strong>1.12 BUG ABUSE (BA): </strong>Es la acción de utilizar un bug, o un glitch, para beneficio
+                    propio.
+                    <br><br>
+                    <strong>1.13 EVADIR ROL (ER): </strong>Es la acción de evitar un rol, o de no responder a un rol, de
+                    manera intencional.
+                    <br><br>
+                    <strong>1.14 NO ROL DE ENTORNO (NRE): </strong>Es la acción de no interpretar el entorno, y los
+                    objetos que lo componen, de manera realista.
+                    <br><br>
+                    <strong>1.15 INSULTOS FUERA DEL JUGADOR(IOOC): </strong>Es la acción de insultar a otro jugador,
+                    fuera del rol de tu personaje.
+                    <br><br>
+                    <strong>1.16 VALORAR VIDA: </strong>Es la acción de valorar la vida de tu personaje, y de los demás
+                    personajes, de manera realista.
+                    <br><br>
+                    <strong>1.17 ROLES AGRESIVOS EN VEHÍCULOS: </strong>Es la acción de rolear de manera agresiva,
+                    mientras se conduce un vehículo.
+                    <br><br>
+                    <strong>1.18 ROL DE HUMILLACIÓN: </strong>Es la acción de humillar a otro personaje, de manera
+                    intencional, y sin un rol previo.
+                    <br><br>
+                    <strong>1.19 SOBRE EL USO DE CHEATS: </strong>Está completamente prohibido el uso de cheats, mods o
+                    de hacks que alteren el juego y otorgue un beneficio al jugador.
+                    <br><br>
+                    <strong>1.20 COMANDOS Y SUS USOS: </strong><br>
+                    /me: Se utiliza para realizar acciones dentro de tu personaje cuando no tenemos posibilidad de usar
+                    animaciones que tenga el juego y se debe escribir en tercera persona.<br>
+                    /do: Se utiliza para describir ciertos aspectos del personaje y/o el entorno que lo rodea. Se debe
+                    escribir siempre en tercera persona.<br>
+                    /entorno: Este es para dar aviso obligatorio a la policía sobre un acto ilícito que se está
+                    cometiendo, y es sancionable no utilizarlo. Se redacta siempre en tercera persona.<br>
+                    /report: Este comando se utiliza para dar aviso a un administrador sobre algún problema que
+                    tengamos.<br>
+                    /twt: Este comando es para hablar por twitter con las demás personas en el servidor, se utiliza en
+                    primera persona y siempre es IC.<br>
+                    /auxilio: Este comando es para dar aviso a los SAME, se utiliza en tercera persona y tiene que tener
+                    una buena descripción de los hechos<br>
+                    /anon: este comando se utiliza solamente para actos ilícitos preguntar disponibilidad de la policía,
+                    negociar durante un robo, anunciar el trabajo de sicario.<br>
+                    <br>
+                    </p>
+                </div>
+                <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                    <div class="tab-pane fade show active" id="v-pills-police" role="tabpanel"
+                        aria-labelledby="v-pills-police-tab">
+                        <h4 class="text-center text-white">Normativa Policial</h4>
+                        <h6>Índice</h6>
+                        <p>
+                            1.0 - PFA.<br>
+                            1.1 - REGLAS POLICIALES.<br>
+                            1.2 - DERECHOS.<br>
+                            1.3 - CÓDIGOS RADIALES.<br>
+                            1.4 - JERARQUÍA.<br>
+                            1.5 - CORRUPCIÓN.<br>
+                            1.6 - ZONAS.<br>
+                            1.7 - CONDENAS.<br>
+                            1.8 - CAUDAL.<br>
+                            1.9 - MANSIÓN GRAPESEED.<br>
+                            1.10 - BLACKLIST.<br>
+                            <hr>
+                            <strong>1.0 - INTRODUCCIÓN PFA: </strong><br>
+                            Los conceptos básicos para entrar a esta facción son:<br>
+                            • Tener un nivel básico de conocimiento de rol.<br>
+                            • No tener múltiples sanciones administrativas.<br>
+                            • Cumplir con la edad mínima la cual es +15.<br>
+                            • Tener respeto a la persona a la cual me dirijo.<br>
+                            • Respetar toda la normativa general del servidor.<br>
+                            <br>
+                            <strong>1.1 - REGLAS POLICIALES: </strong><br>
+                            <strong>PFA EN SERVICIO: </strong><br>
+                            • Es obligatorio el uso de uniforme de la PFA.<br>
+                            • Es obligatorio portar su armamento reglamentario y el chaleco.<br>
+                            • Está prohibido en todo momento quedarse AFK más de 10 minutos sin avisar.<br>
+                            • Es obligatorio la posesión de licencia de armas y de conducir.<br>
+                            • Respetar en todo momento y obedecer al rango más alto en ese momento.<br>
+                            • Es obligatorio presentar nuestra placa policial si un civil la solicita.<br>
+                            • Se deberá valorar la vida nuestra vida, la de nuestros compañeros y la de los civiles en
+                            todo momento.<br>
+                            • Se prohíbe el uso del menú faccional para beneficio propio.<br>
+                            • Se prohíbe totalmente al Agente participar en actividades ilícitas.<br>
+                            • Tendrá que permanecer en todo momento conectado al canal de discord correspondiente.<br>
+                            • El máximo de participantes en rol agresivo es de 11.<br>
+                            • No se podrá patrullar solo en ningún caso, el mínimo es de 4.<br>
+                            • En el caso de llegar a 2 personas a la hora de patrullar tendrán que salir en binomios,
+                            esto implicaría que en cada patrulla sean 2 PFA.<br>
+                            • Se deberá dar 2 avisos como mínimo en una persecuención antes de disparar.<br>
+                            • El mal uso del /pfa será motivo de sanción grave.<br>
+                            <br>
+                            <strong>PFA FUERA DE SERVICIO: </strong><br>
+                            • Está prohibido usar vehículos de la facción para uso propio.<br>
+                            • No podrás realizar ninguna actividad ilícita y tampoco aprovecharte del armamento
+                            policial.<br>
+                            • No podrás portar drogas.<br>
+                            • Deberás tratar con respeto al resto de civiles en todo momento.<br>
+                            <br>
+                            <strong>1.2 - DERECHOS: </strong><br>
+                            Es obligatorio redactar los derechos civiles hacia el detenido.<br>
+                            En el caso de no leer los derechos antes de llegar a la comisaría, el detenido podrá
+                            retirarse sin ninguna multa. Igualmente, el detenido no podrá recuperar ninguno de los
+                            objetos incautados.<br>
+                            <br>
+                            <strong>DERECHOS CIVILES: </strong><br>
+                            • Tiene derecho a guardar silencio, todo lo que diga podrá ser utilizado en su contra en un
+                            tribunal de justicia.<br>
+                            • Tiene derecho a comida y bebida de ser necesario.<br>
+                            • Tiene derecho a asistencia médica de así serla necesaria.<br>
+                            • Tiene derecho a un abogado.<br>
+                            • Tiene derecho a una llamada de no más de 1 minuto en presencia de un Oficial.<br>
+                            <br>
+                            <strong>1.3 - CÓDIGOS RADIALES: </strong><br>
+                            <strong>CÓDIGOS POLICIALES: </strong><br>
+                            10-00: Precaución.<br>
+                            10-04: Afirmativo/Recibido.<br>
+                            10-05: Negativo.<br>
+                            10-07: Persecución.<br>
+                            10-09: Repita el mensaje.<br>
+                            10-10: Salir de servicio.<br>
+                            10-12: Entra en servicio.<br>
+                            10-19: Regreso a comisaría.<br>
+                            10-20: Ubicación.<br>
+                            10-27: Peligro en la zona.<br>
+                            10-31: Persona sospechosa.<br>
+                            10-32: Se requieren refuerzos en…<br>
+                            10-35: Camión de servicios comunitarios.<br>
+                            10-37: Se necesita grúa.<br>
+                            10-38: Se necesita ambulancia.<br>
+                            10-46: Accidente, personas heridas.<br>
+                            10-80: Nos reunimos en...<br>
+                            10-90: Falsa alarma.<br>
+                            10-91: Se requiere unidad supervisora/Alto rango.<br>
+                            10-99: Misión completada.<br>
+                            <br>
+                            <strong>CÓDIGO PIT: MANIOBRAS PARA INTERCEPTAR UN VEHÍCULO</strong><br>
+                            <br>
+                            <strong>1.4 - JERARQUÍA: </strong><br>
+                            A CONTINUACIÓN ESTÁN TODOS LOS RANGOS PRESENTES DE LA PFA:<br>
+                            • Cadete.<br>
+                            • Cabo.<br>
+                            • Suboficial.<br>
+                            • Oficial.<br>
+                            • Sargento.<br>
+                            • Subcomisario.<br>
+                            • Comisario.<br>
+                            • Teniente.<br>
+                            • Teniente mayor.<br>
+                            • Inspector.<br>
+                            • Capitán.<br>
+                            • Comandante.<br>
+                            • Jefe.<br>
+                            • Director.<br>
+                            <br>
+                            <strong>ARMAMENTO HABILITADO POR RANGO: </strong><br>
+                            • Cadete, cabo, suboficial: Taser, porra, linterna, pistola reglamentaria, pistola AP y SMG
+                            de asalto.<br>
+                            • Oficial, sargento: Taser, porra, linterna, pistola reglamentaria, pistola AP, SMG de
+                            asalto, escopeta, carabina, gases y humos.<br>
+                            • Subcomisario, comisario, teniente, teniente mayor e inspector: Taser, porra, linterna,
+                            pistola reglamentaria, pistola AP, SMG de asalto, escopeta, carabina, carabina MK2, gases y
+                            humos.<br>
+                            • Capitán, comandante, jefe y director: A elección.<br>
+                            <br>
+                            <strong>1.5 - CORRUPCIÓN: </strong><br>
+                            Si se le llega a encontrar haciendo corrupción sin pertenecer a dicho rango será
+                            blacklisteado de la facción.<br>
+                            La corrupción (en servicio) será permitida a partir del rango TENIENTE, y tendrá algunas
+                            limitaciones.<br>
+                            La corrupción (fuera de servicio) será permitida a partir de INSPECTOR, y tendrá pocas
+                            limitaciones.<br>
+                            • No podrán hacer corrupción cerca de otras personas: policías, atracadores, civiles,
+                            etc.<br>
+                            • Deberán usar máscara para no ser reconocidos por los agentes policiales.<br>
+                            <br>
+                            <strong>1.6 - ZONAS: </strong><br>
+                            • Zonas Azuladas: Son zonas delimitadas en el mapa en las cuales se consideran zonas seguras
+                            y en las mismas no se puede iniciar roles agresivos o actividades ilícitas.<br>
+                            • Zonas Grises/Sin color: Son zonas que no están delimitadas ni se ven en el mapa, en las
+                            mismas se pueden iniciar roles agresivos.<br>
+                            • Zonas Rojas: Son zonas delimitadas en el mapa en las cuales se pueden cometer actos
+                            ilícitos y se pueden iniciar roles agresivos sin tener un rol previo. Ya que por RDE (Rol de
+                            Entorno) se puede considerar que es una zona de guerra ya sea de bandas/mafias/carteles,
+                            etc.<br>
+                            • Zonas Blancas: Son zonas delimitadas en el mapa para efectuar los robos de mafias/civiles.
+                            El salir de esa zona en cualquier momento del robo se toma como abandono del mismo. Los
+                            tiradores deben estar dentro de la misma al comenzar el robo.<br>
+                            <br>
+                            <strong>1.7 - CONDENAS: </strong><br>
+                            <strong>10 acciones de servicio comunitario: </strong><br>
+                            • Conducción temeraria.<br>
+                            • Disturbios.<br>
+                            • Circular por la vía pública desnudo.<br>
+                            • Insultar a un oficial.<br>
+                            • Uso indebido del teléfono móvil.<br>
+                            • Robo de vehículo.<br>
+                            <br>
+                            <strong>10 meses de condena y 5 acciones de servicio comunitario: </strong><br>
+                            • Conducción temeraria.<br>
+                            • Robo de vehículo.<br>
+                            <br>
+                            <strong>15 meses de condena y 10 acciones de servicio comunitario: </strong><br>
+                            • Conducción temeraria.<br>
+                            • Robo de vehículo.<br>
+                            • Homicidio involuntario.<br>
+                            • Resistencia a la autoridad.<br>
+                            <br>
+                            <strong>20 meses de condena y 15 acciones de servicio comunitario: </strong><br>
+                            • Robo de vehículo.<br>
+                            • Homicidio involuntario.<br>
+                            • Resistencia a la autoridad.<br>
+                            • Robo a mano armada.<br>
+                            • Tráfico de armas.<br>
+                            <br>
+                            <strong>25 meses de condena y 20 acciones de servicio comunitario: </strong><br>
+                            • Homicidio involuntario.<br>
+                            • Resistencia a la autoridad.<br>
+                            • Robo a mano armada.<br>
+                            • Tráfico de armas.<br>
+                            • Tráfico de drogas.<br>
+                            <br>
+                            <strong>30 meses de condena y 25 acciones de servicio comunitario: </strong><br>
+                            • Resistencia a la autoridad.<br>
+                            • Robo a mano armada.<br>
+                            • Tráfico de armas.<br>
+                            • Tráfico de drogas.<br>
+                            • Homicidio.<br>
+                            <br>
+                            <strong>1.8 - CAUDALES: </strong><br>
+                            • La policia podrá asistir a las alertas recibidas de lavados de dinero (caudales) cuando se
+                            encuentren un mínimo de 6 integrantes en servicio<br>
+                            • Esta permitido acudir con arma larga y chaleco antibalas<br>
+                            • La vestimenta que se deberá utilizar es la del GEOF<br>
+                            • Se deberá tener en cuenta que estos vehículos son una zona roja en movimiento.<br>
+
+                            <br>
+
+                            <strong>1.9 - MANSIÓN GRAPESEED: </strong><br>
+                            La mansión se encuentra en la zona de Grapeseed y es el lugar donde se llevan a cabo las
+                            operaciones especiales de la policía. Es un área restringida y solo los miembros autorizados
+                            de la policía pueden ingresar.<br>
+                            <br>
+                            <strong>1.10 - BLACKLIST: </strong><br>
+                            La lista negra (blacklist) incluye a todos aquellos agentes que han sido expulsados de la
+                            facción por incumplir las normas de manera reiterada. Los miembros en esta lista no podrán
+                            volver a ingresar a la PFA bajo ninguna circunstancia.<br>
+                            <hr>
+                        </p>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                    <div class="tab-pane fade show active" id="v-pills-messages" role="tabpanel"
+                        aria-labelledby="v-pills-messages-tab">
+                        <h4 class="text-center text-white">Normativa Same</h4>
+                        <h6>Índice</h6>
+                        <p>
+                            1.0 - SAME <br>
+                            1.1 - REGLAS GENERALES <br>
+                            1.2 - PRIORIDADES DE LLAMADOS <br>
+                            1.3 - LLAMADOS <br>
+                            1.4 - EMERGENCIAS POLICIALES <br>
+                            1.5 - RANGOS DEL CUERPO MÉDICO <br>
+                            1.6 - USO DEL /ME Y /DO <br>
+
+                            <hr>
+                            <strong>1.0 - SAME</strong><br>
+                            Los médicos del S.A.M.E. (Sistema Médico de Emergencias) son un cuerpo neutral, por lo
+                            tanto, jamás se podrá mentir sobre lo que pasó. Siempre se tiene que decir toda la verdad.
+                            No beneficia ni se inclina a favor de ninguna de las partes opuestas o enfrentadas en un
+                            conflicto sin importar cual fuere.
+                            <br><br>
+                            <strong>1.1 - REGLAS GENERALES</strong><br>
+                            Como disponibilidad general los SAME, disponen del comando /same para enviar avisos a la
+                            ciudad, estos avisos se suelen dar para avisar ciertos aspectos o ingresar a ciertos lugares
+                            y consultar si la zona es segura<br>
+                            • Una vez que se entra en servicio, solo se podrá salir de él cuando hayan pasado 15 min. De
+                            ser necesario salir antes, solo se podrá hacer cuando un superior te lo permita.<br>
+                            • Siempre llevar la vestimenta asignada para cada cargo y queda prohibido el uso de la misma
+                            cotidianamente. El incumplimiento de esta norma será susceptible de ser sancionado.<br>
+                            • No se podrá realizar roles agresivos, ni actos ilícitos, ni aprovecharse de información
+                            privilegiada para beneficio propio.<br>
+                            • Deberá de tomar los elementos médicos necesarios para el trabajo y los mismos se deberán
+                            guardar obligatoriamente al momento de salir de servicio.<br>
+                            • El portar elementos médicos fuera de servicio corresponde a una sanción administrativa y/o
+                            expulsión del cuerpo médico. El mismo queda a disposición de la jefatura para efectuar la
+                            sanción correspondiente.<br>
+                            • En caso de que se nos pida nuestro nombre, apellido y/o rango, etc, estamos obligados a
+                            proporcionarlo.<br>
+                            • Está terminantemente prohibido cometer actos ilicitos en servicio, el no respetar esta
+                            norma es expulsión directa del cuerpo médico sin excepción.<br>
+                            • Ocultar información grave o importante a la jefatura es susceptible a una sanción.<br>
+                            • Esta completamente se puede faltar respeto de compañeros, miembros de otras facciones o
+                            civiles.<br>
+                            • Se deberá avisar al oficial cuando este por estabilizar al delincuente.<br>
+                            • En un robo/tiroteo se deberá obedecer al grupo vencedor siempre valorando
+                            la vida, ósea que, si en el caso de que el grupo vencedor sean los delincuentes
+                            y estos te piden que te retires sin atender a los policías, debes retirarte.<br>
+                            • Esta completamente prohibido negarle atención a un paciente, sea cual sea el motivo.
+                            • Quedarse AFK durante más de 5 minutos es sin dar aviso a un superior es sancionable.<br>
+                            • Solo se deben transportar personas que se encuentren heridos y personal del
+                            trabajo.<br><br>
+                            <strong>1.2 - PRIORIDADES DE LLAMADOS</strong><br>
+                            Los llamados policiales son los más importantes y se deben atender con la mayor urgencia
+                            posible.<br>
+                            El orden de los llamados son:<br>
+                            • S.A.M.E. (Otros compañeros) <br>
+                            • PFA (Policia Federal) <br>
+                            • Talleres Mecánicos <br>
+                            • Civiles
+                            <br><br>
+
+                            <strong>1.3 - LLAMADOS</strong><br>
+                            Los siguientes llamados no serán atendidos por el personal SAME: <br>
+                            • Llamados mal formulados. <br>
+                            • Llamados ofensivos. <br>
+                            • Llamados en el agua <br>
+                            • Llamados repetitivos (SPAM).<br>
+                            • Los únicos llamados que atenderá el SAME son los que se reciben por el medio
+                            correspondiente.
+                            <br><br>
+
+                            <strong>1.4 - EMERGENCIAS POLICIALES</strong><br>
+                            Ante una emergencia policial se debe proceder de la siguiente forma: <br>
+                            • Informamos que estamos acudiendo al llamado de la facción <br>
+                            • Siempre preguntamos si es segura la zona <br>
+                            • Si perdimos la ubicación la solicitamos nuevamente.<br>
+                            <b>IMPORTANTE:</b> Si leemos que por via ANON nos piden que nos retiremos del llamado
+                            VALORAMOS NUESTRA VIDA y nos retiramos, tambien si nos amenazan ic
+                            <b>(Por ejemplo si nos apuntan con armas o si nos disparan para que nos retiremos).</b>
+
+                        </p>
+                        <p>
+                            <strong>1.5 - RANGOS DEL CUERPO MÉDICO</strong>
+                            <br><br>
+                            <b>Jefe:</b> Es quien maneja el cuerpo médico y organiza la facción
+                            <br>
+                            <b>Subjefe:</b> Se encarga de administrar el hospital y cuerpo médico junto al Jefe de la
+                            facción.
+                            <br>
+                            <b>Instructor:</b> Este rango se encarga de instruir a los demás miembros,
+                            tomar oposiciones solo o junto a los que se encuentran por encima de él y de ser
+                            la figura al mando cuando los Directivos no se encuentran.
+                            <br>
+                            <b>Cirujano:</b> Este rango jerarquico se encarga de hacer operaciones en el quirófano,
+                            lo puede acompañar un médico para realizar una operación siempre bajo su instrucción y
+                            responsabilidad.
+                            Es el responsable de todo lo que pase dentro del quirófano.
+                            <br>
+                            <b>Especialista:</b> El especialista se encarga de hacer tratamientos mas importantes de la
+                            clínica y es de mayor jerarquía que el residente y el interno.
+                            <br>
+                            <b>Residente:</b> Aún no tiene especialidad. Pero podrá realizar todo tipo de tratamientos.
+                            <br>
+                            <b>Interno:</b> Se los capacitará y evaluará su desempeño durante 7 días, antes de ser
+                            ascendidos.
+                            <br><br>
+                        </p>
+                        <p>
+                            <strong>1.6 - USO DEL <b class="me">/ME</b> Y <b class="do">/DO</b></strong>
+                            <br>
+                            El uso del <b class="me">/me</b> y <b class="do">/do</b> son obligatorios al momento de
+                            estar atendiendo al paciente, si este no respondiese dichos comandos, no tendremos la
+                            obligación de seguir con la reanimación o tratamiento. (Se debe preguntar al menos 3 veces
+                            en caso que el paciente no responda al primer mensaje)
+                            <br>
+                            Se deberán hacer a la hora de un tratamiento mínimamente 3 líneas de rol. Por ejemplo:
+                            <br>
+                            <b class="me">/me</b> Coloca dos dedos en el cuello en busca de pulso <br>
+                            <b class="do">/do</b> ¿Tendría pulso? <br>
+                            (El sujeto nos responde si o no)<br>
+                            <br>
+                            <b class="me">/me</b> examina el cuerpo buscando heridas <br>
+                            <b class="do">/do</b> ¿Qué tipo de heridas tendría y donde? <br>
+                            (Después procedemos a tratar la herida correspondiente)
+                            <br><br>
+                            En caso de que hayan <b>3 o menos SAMES</b> servicio existe la posibilidad de utilizar el
+                            siguiente comando:
+                            <br><br>
+                            <b class="do">/do</b> Se vería llegar un grupo de médicos y tratar las heridas
+                            correspondientes. <br>
+                            <b class="me">/me</b> Realizan RCP de emergencia.
+                            <br><br>
+                        </p>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                    <div class="tab-pane fade show active" id="v-pills-settings" role="tabpanel"
+                        aria-labelledby="v-pills-settings-tab">
+                        <h4 class="text-center text-white">Normativa A.C.A.</h4>
+                        <h6>Índice</h6>
+                        <p>
+                            1.0 - A.C.A <br>
+
+                            <hr>
+                        </p>
+                        <p>
+                            <strong>1.0 A.C.A</strong><br>
+                            Como taller mecánico, nuestro trabajo se basa en reparar y modificar cada vehículo de la
+                            ciudad. Así también como
+                            remolcarlos y enviarlos al corralón. Por lo tanto, es de suma importancia tener
+                            conocimientos básicos en las partes de
+                            un vehículo, tanto el motor como rodado, etc. Para esto, brindaremos unas guías para que las
+                            conozcan más a fondo y
+                            resulte todo agradable.
+                            <br><br>
+                            <strong>1.1 RANGOS</strong><br>
+                            <b>JEFE:</b> Es la mayor autoridad del taller, se encargará de supervisar a los
+                            mecánicos y/o generar vínculos o
+                            acuerdos con el resto de las facciones, además deberá encargarse de solicitar el dinero para
+                            los fondos del taller. Se
+                            encargará de tomar las oposiciones para los ingresantes al cuerpo de los mecánicos.
+                            <br><br>
+                            <b>SUB-JEFE:</b> Supervisará los arreglos y modificaciones dentro del taller. Comprobara que
+                            el taller funcione correctamente.
+                            En caso de que no se encuentre el jefe, este estará a cargo del taller. Se encargará de
+                            tomar las oposiciones para los
+                            ingresantes al cuerpo de los mecánicos.
+                            <br><br>
+                            <b>INSTRUCTOR:</b> Se encargará de instruir/enseñar a los nuevos mecánicos el
+                            funcionamiento interno del taller,
+                            comprobará los arreglos que se hagan en la calle, así como el correcto uso y manejo de la
+                            grúa.
+                            <br><br>
+                            <b>GERENTE:</b> (completar)
+                            <br><br>
+                            <b>EXPERIMENTADO:</b> En caso de que no haya un JEFE/SUB-JEFE en el taller, este
+                            estará a cargo de este. Deberá tener
+                            un conocimiento mayor al resto de los mecánicos.
+                            <br><br>
+                            <b>ESPECIALISTA: </b>(completar)
+                            <br><br>
+                            <b>NOVATO:</b> Mientras se encuentre en servicio este podrá tunear vehículos. Deberá
+                            ayudar a los reclutas y será el segundo
+                            en orden de prioridad a la hora de concurrir a los llamados de auxilio. En caso de que se
+                            encuentre desocupado deberá
+                            sacar una grúa e ir a revisar que no haya autos abandonados por la ciudad.
+                            <br><br>
+                            <b>APRENDIZ:</b> Deberá estar constantemente bajo supervisión de un cargo mayor. Es
+                            el primero en orden de prioridad a
+                            la hora de concurrir a los llamados de auxilio. En caso de que se encuentre desocupado
+                            deberá sacar una grúa e ir a
+                            revisar que no haya autos abandonados por la ciudad.
+                            <br><br>
+                            <strong>1.2 NORMAS BASICAS</strong><br>
+                            LAS SIGUIENTES NORMAS DEBERAN SER CUMPLIDAS AL PIE DE LA LETRA
+                            <br><br>
+                            • CODIGO DE VESTIMENTA
+                            Todo mecánico en servicio deberá tener la respectiva ropa de trabajo dentro del taller la
+                            cual será provista por el
+                            mismo. No tenerla y estar en servicio será motivo de sanción.<br>
+                            • SE DEBE RESPETAR LA CADENA DE MANDO
+                            La cadena de mando se considera de mayor importancia en orden descendente de acuerdo con el
+                            punto 1.1
+                            <br><br>
+                            <strong>1.2 REGLAMENTO GENERAL</strong>
+                            <br><br>
+                            • Todo mecánico deberá estar en radio (Discord) mientras se este de servicio, una vez
+                            finalizado, deberá salir de la
+                            misma. <br>
+                            • Al entrar en servicio, todo mecánico deberá utilizar los vehículos oficiales del cuerpo.
+                            No hacerlo incurrirá en una
+                            sanción grave. <br>
+                            • Todo mecánico deberá cobrar siempre los arreglos, sin importar la amistad que consiga
+                            dentro y fuera del rol. Mas
+                            abajo se podrá encontrar un listado de precios. <br>
+                            • Esta totalmente prohibido ser del cuerpo de mecánicos y tener otro trabajo en la ciudad.
+                            <br>
+                            • Están totalmente prohibidas las faltas de respeto entre mecánicos y hacia los clientes.
+                            Sera motivo de expulsión. <br>
+                            • Un mecánico no podrá ser corrupto, aceptar dinero por favoritismo, extorsión o
+                            reparaciones/modificaciones a
+                            vehículos sin coste a amigos, etc. Sera motivo de expulsión. <br>
+                            • Los mecánicos pueden ser asaltados estando de servicio, pero no pueden recibir una llamada
+                            de auxilio, y al asistir
+                            ser robado. <br>
+                            • Los mecánicos nunca pueden salirse de rol, exceptuando cuando haya un admin que lo
+                            habilite. Salirse de rol es motivo
+                            de sanción grave. <br>
+                            • Esta prohibido quedarse AFK en servicio por mas de 5 minutos. Esto es motivo de sanción
+                            grave. <br>
+                            • Todo mecánico tiene la obligación de dar una explicación de lo que se esta reparando para
+                            generar un roleo agradable
+                            para ambas partes. También deberá pedir ubicaciones exactas y explicaciones de los problemas
+                            surgidos. <br>
+                            • Los mecánicos pueden recibir propinas, pero no pueden pedirlas. Hacer esto será motivo de
+                            sanción leve. <br>
+                            • Todo arreglo se realizará en el taller dependiendo la situación y las fallas. <br>
+                            • Cada vez que se reciba un llamado de servicio se deberá mandar un mensaje con el comando
+                            /RP con lo siguiente
+                            dependiendo la situación en la que te encuentres: <br>
+                            /rp Mecánico en camino a ubicación. (X KM) [Si son más de 3 KM, en caso de ser más de 6 se
+                            deberá ir anunciando el KM al
+                            ir avanzando hacia la ubicación. ]
+                            <br><br>
+                            /rp Mecánico Ocupado
+                            <br><br>
+                            Y cada tanto tiempo, unos 10 min aproximadamente, se deberá anunciar:
+                            <br><br>
+                            /rp Mecánicos disponibles
+                            <br><br>
+                            • Todo vehículo abandonado deberá ser remolcado al taller, después se deberá anunciar vía
+                            /rp de la siguiente manera
+                            (copiar, pegar y reemplazar las X)
+                            <br><br>
+                            /rp Se encontró un ‘’vehiculo-color-patente’’ abandonado/mal estacionado en ‘’X LUGAR’’. El
+                            dueño tiene 5 min para
+                            retirar el vehículo en el taller y pagar la multa correspondiente, o el mismo será enviado
+                            al deposito municipal.
+                            <br><br>
+                            Ejemplo:
+                            /rp Ferrari Negra patente ‘’AZX 222’’ fue remolcada desde plaza cubos por estar mal
+                            estacionada. El dueño tiene 5 min
+                            para retirar el vehículo en el taller y pagar la multa correspondiente, o el mismo será
+                            enviado al deposito municipal.
+                            <br>
+                            El orden de prioridades para reparaciones será la siguiente: <br>
+                            • Policía <br>
+                            • Policía Federal <br>
+                            • SAME <br>
+                            • Taxistas <br>
+                            • Civiles.
+                            <br><br>
+                            No cumplir con esta norma conlleva a una sanción leve.
+                            <br><br>
+                            Cualquier mecánico que haya sido expulsado del cuerpo puede volver a entrar a el haciendo
+                            las oposiciones cuando
+                            corresponda. Se tendrá en cuenta los motivos de expulsión en primera instancia y su
+                            aceptación quedará sujeta a la
+                            decisión de la jefatura.
+                            <br><br>
+                            <strong>1.3 FUERA DE SERVICIO</strong>
+                            <br><br>
+                            • Los mecánicos no podrán realizar ningún tipo de acción ilícita estando de servicio. <br>
+                            • Todo mecánico que no este de servicio será civil y tiene prohibido abrir o reparar
+                            vehículos salvo el suyo.
+                            <br><br>
+                            <strong>1.4 VEHICULOS</strong>
+                            <br><br>
+                            • En lo posible, cada mecánico deberá ir con una pareja en los vehículos oficiales para
+                            atender un llamado de
+                            remolque. <br>
+                            • Todo mecánico deberá cobrar siempre los arreglos, sin importar la amistad o camaradería
+                            que se consiga dentro y
+                            fuera del rol. Mas abajo se podrá encontrar un listado de precios. <br>
+                            • Cuando se presente un vehículo sin patente a tunear, se deberá llamar a un policía para
+                            que este presente a la hora
+                            del tuneo.
+                            <br><br>
+                            <strong>1.4 COSTO DE REPARACIONES</strong>
+                            <br><br>
+                            • <b>VEHICULOS OFICIALES</b>
+                            Toda reparación a vehículos oficiales (Patrullero, Ambulancia y Taxi) será GRATUITA debido a
+                            los acuerdos o convenios
+                            que los vinculan. <br>
+                            • <b>DEMAS VEHICULOS</b>
+                            A continuación se detallan los precios de los vehículos en función de los daños, modelo y
+                            gama de este.
+                            <br><br>
+                            Lista general: <br>
+                            • Mano de obra en calle: $3.000 <br>
+                            • Mano de obra en taller: $2.500 <br>
+                            • Nafta: $2.500 <br>
+                            • GRUA
+                            (Si el vehículo queda gravemente dañado, deberá ser remolcado obligatoriamente hasta el
+                            taller. Basándose en la normativa
+                            y rol de mecánico.) <br>
+                            • Para vehículos de facciones el servicio es GRATUITO <br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
